@@ -1,0 +1,207 @@
+<app-menu-ivi></app-menu-ivi>
+<div class="row containerPreCadastro">
+    <div class="col-2">
+        <div class="row" >
+            <div class="col-12 col-sm-12 atributosBox">
+                <div class="Label">
+                    <h6>{{tituloSH6[0]}}</h6>
+                    <ul>
+                        <li>Verificação de Duplicidade</li>
+                        <li>Validação de Projeto</li>
+                    </ul>
+                </div>
+            </div>
+                <div class="w-100"></div>
+            <div class="col-12 col-sm-12 atributosBox">
+                    <div class="Label">
+                        <h6>{{tituloSH6[1]}}</h6>
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            
+                        </ul>
+                    </div>
+            </div>
+                <div class="w-100"></div>
+            <div class="col-12 col-sm-12 atributosBox">
+                <div class="Label">
+                    <h6>{{tituloSH6[2]}}</h6>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+    <div class="col-10" >
+        <div class="row">
+            <div class="col-12 atributosBoxRight">
+                    <div class="Label">
+                        <h6>{{tituloSH6[3]}}</h6>
+                        <form [formGroup]="formulario" #f="ngForm"  >
+                            <div class="row InputForm Margin50PX">
+                                <div class="col-4">
+                                    <div class="row">
+                                        <div class="col-3 colLabel">
+                                            <label for="">ID Pré Cadastro: <span>*</span></label>
+                                        </div>
+                                        <div class="col-6 colInput">
+                                            <input type="text">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="row">
+                                        <div class="col-3 colLabel">
+                                            <label for="">Status: <span>*</span></label>
+                                        </div>
+                                        <div class="col-6 colInput">
+                                            <input type="text">
+                                        </div>
+                                    </div>
+                                  
+                                   
+                                </div>
+                                <div class="col-4">
+                                    <div class="row">
+                                        <div class="col-3 colLabel">
+                                            <label for="">Last Update: <span>*</span></label>
+                                        </div>
+                                        <div class="col-6 colInput">
+                                            <input type="text">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row InputForm Margin50PX">
+                                <div class="col-4">
+                                    <div class="row">
+                                        <div class="col-3 colLabel_">
+                                            <label for="">Project<br>(Dev Reference): <span>*</span></label>
+                                        </div>
+                                        <div class="col-6 colInput">
+                                            <input type="text">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="row">
+                                        <div class="col-3 colLabel">
+                                            <label for="">Developer:<span>*</span></label>
+                                        </div>
+                                        <div class="col-6 colInput">
+                                            <select name="" id="developer" formControlName="Developer">
+                                                <option value="">selecione</option>
+                                                <option value="" *ngFor="let desenvolvedor of developer">{{desenvolvedor}}</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="row">
+                                        <div class="col-3 colLabel_">
+                                            <label  for="">Project<br>(IVI Reference): <span>*</span></label>
+                                        </div>
+                                        <div class="col-6 colInput">
+                                            <input type="text">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row InputForm Margin50PX">
+                                <div class="col-4">
+                                    <div class="row">
+                                        <div class="col-3 colLabel">
+                                            <label for="">State:<span>*</span></label>
+                                        </div>
+                                        <div class="col-6 colInput">
+                                            <select name="" id="estado" formControlName="State">
+                                                <option value="">selecione</option>
+                                                <option value="" *ngFor="let state of estado">{{state}}</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="row">
+                                        <div class="col-3 colLabel">
+                                            <label for="">City:<span>*</span></label>
+                                        </div>
+                                        <div class="col-6 colInput">
+                                            <select name="" id="cidade" formControlName="City">
+                                                <option value="">selecione</option>
+                                                <option value="" *ngFor="let city of cidade">{{city}}</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="row">
+                                        <div class="col-3 colLabel">
+                                            <label for="">Utility:<span>*</span></label>
+                                        </div>
+                                        <div class="col-6 colInput">
+                                            <select name="" id="" id="utility" formControlName="Utility">
+                                                <option value="">selecione</option>
+                                                <option value="" *ngFor = "let utilidade of utility">{{utilidade}}</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row InputForm Margin50PX">
+                                <div class="col-4">
+                                    <div class="row">
+                                        <div class="col-3 colLabel">
+                                            <label for="">Instal Capacity​ (kWac)<span>*</span></label>
+                                        </div>
+                                        <div class="col-6 colInput">
+                                            <input type="number" min="0">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="row">
+                                        <div class="col-3 colLabel">
+                                            <label for="">Instal Capacity​(kWdc): <span>*</span></label>
+                                        </div>
+                                        <div class="col-6 colInput">
+                                            <input type="text">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="row">
+                                        <div class="col-4 colLabel colLabelRadio">
+                                            <label for="">Tem Parecer de Acesso? <span>*</span></label>
+                                        </div>
+                                        <div class="col-8 radio">
+                                            <div class="row">
+                                                <div class="col-2">
+                                                    <input type="radio" id="html" name="fav_language" value="yes">
+                                                      <label for="html">Yes</label>
+                                                </div>
+                                                <div class="col-2">
+                                                      <input type="radio" id="css" name="fav_language" value="no">
+                                                       <label for="css">No</label>
+                                                </div>
+                                            </div>
+                                             
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+

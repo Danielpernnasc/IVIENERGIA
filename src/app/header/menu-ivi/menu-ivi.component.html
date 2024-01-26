@@ -1,0 +1,51 @@
+
+<app-header [mostarLink]="true" [semLink]="false"></app-header>
+<nav class="menuIVI nav-tabs" ngbNav #nav="ngbNav">
+    <div class="divBuscador">
+        <input class="inputBuscador" type="text"
+      >
+    </div>
+    <ng-container ngbNavItem>
+        <ul >
+           <li>
+               <a ngbNavLink routerLink="#" class="linkMenu" >Cadastro</a>
+           </li>
+           <li>
+               <a ngbNavLink routerLink="#" class="linkMenu" >Configurações</a>
+           </li>
+           <li >
+               <a  ngbNavLink routerLink="#" class="linkMenu" >
+                   Consultas
+               </a>
+           </li>
+           <!-- <li ngbDropdown class="nav-item" role="presentation">
+                <button type="button" class="buttonDropdown" ngbDropdownToggle >Menu</button>
+                <div ngbDropdownMenu class="divDropdown">
+                    <a ngbDropdownItem class="linkMenu"  routerLink="/preCadastro">
+                        Pré Cadastramento
+                    </a>
+                    <a  ngbDropdownItem class="linkMenu" routerLink="/preCadastrolote">
+                        Pré Cadastramento por Lote
+                    </a>
+                </div>
+            </li> -->
+            <li class="dropdown">
+                <span>Menu</span>
+                <div class="dropdown_content">
+                    <a  ngbNavLink class="linkMenu"  routerLink="/preCadastro">
+                        Pré Cadastramento
+                    </a>
+                    <a  ngbNavLink class="linkMenu" routerLink="#">
+                        Pré Cadastramento por Lote
+                    </a>
+                </div>
+            </li>
+           <li>
+               <a ngbNavLink routerLink="#" class="linkMenu" >
+                   Relatórios
+               </a>
+           </li>
+       </ul> 
+       
+    </ng-container>
+</nav>

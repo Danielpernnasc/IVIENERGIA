@@ -1,0 +1,19 @@
+<div class="row topHeader"> 
+    <div class="col-4">
+        <div *ngIf="mostarLink">
+            <a routerLink="/home">
+                <img class="imgLOGO" [src]="LogoIVI.LogoIVI3" alt="logo">
+            </a>
+        </div>
+        <div *ngIf="semLink">
+            <img class="imgLOGO" [src]="LogoIVI.LogoIVI3" alt="logo">
+     
+        </div>
+    </div>
+    <div class="col-4"></div>
+    <div class="col-2"></div>
+    <div class="col-2 date">
+        <span *ngIf="MostrarData">{{dataAtual | date: "dd/MM/YYYY"}}</span><br>
+        <span *ngIf="MostrarData">{{dataAtual | date: "HH:mm"}}</span>
+    </div>
+</div>

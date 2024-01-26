@@ -1,0 +1,102 @@
+@import '../../../styles.scss';
+
+
+.containerPreCadastro{
+    margin: $marginContainer;
+}
+.Label {
+    h6{
+        width: 155px;
+        padding-left: 10px;
+        margin-top: -15px;
+        margin-left: -8px;
+        width: #fff;
+        background: #fff;
+       
+    }
+    li {
+        //list-style-type: none;
+        font-family: "Kumbh Sans", sans-serif;
+        font-size: 12px;
+    }
+}
+
+.atributosBox{
+    margin-top: 20px;
+    border: $border_box;
+ 
+}
+
+.atributosBoxRight{
+    margin: 20px 10px 0 10px;
+    border: $border_box;
+}
+.Margin50PX{
+    margin-top: 50px;
+}
+.InputForm{
+
+    label {
+        font-size: 10px;
+    }
+    input, select {
+       border: $inputForm;
+       border-radius: 5px;
+       font-size: 12px;
+       margin-left: 5px;
+       width: 100%;
+       box-shadow: $shadow;
+      
+    }
+    span{
+        color: rgb(245, 32, 32);
+    }
+    select {
+        height: 23px;
+    }
+}
+.colLabel{
+    padding: 0; 
+    text-align: right;
+}
+.colInput{
+    padding: 0;
+}
+.colLabel_{
+    padding-right: 0;
+    padding-left: 5px;
+}
+
+.radio input[type=radio]{
+    display:none; /* Esconde os inputs */
+}
+
+.radio label {
+    cursor: pointer;
+}
+.radio input[type="radio"] + label:before {
+    border: 2px solid #5D5C5C;
+    content: "\00a0";
+    display: inline-block;
+    font: 16px/1em sans-serif;
+    height: 16px;
+    margin: 0 .25em 0 0;
+    padding:0;
+    vertical-align: top;
+    width: 16px;
+    border-radius:50px;
+}
+
+.radio input[type="radio"]:checked + label:before {
+    background: #000;
+    // color: #FFF;
+    // content: "\2713";
+    text-align: center;
+}
+
+.radio input[type="radio"]:checked + label:after {
+    font-weight: bold;
+}
+.colLabelRadio{
+    margin-top: 20px ;
+}

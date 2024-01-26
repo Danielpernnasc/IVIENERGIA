@@ -1,0 +1,59 @@
+
+<app-header [MostrarData]="false" [semLink]="true"></app-header>
+<!-- <a routerLink="/cadastramento" [queryParams]="{cadastro: 'admin', password: '1234'}">Cadastramento True</a>
+<a routerLink="/cadastramento" [queryParams]="{cadastro: 'admin', password: '4321'}">Cadastramento False</a> -->
+<div class="Margin50PX" >
+    <div class="row">
+        <div class="col-12 backgroundLoging">
+            <div class="row">
+                <div class="row justify-content-center">
+                    <div class="col-6">
+                        <div class="container caixaLogin">
+                            <div class="row justify-content-center">
+                                <div class="col-8">
+                                    <img [src]="logoCentral" alt="">
+                                </div>
+                                <div class="w-100"></div>
+                                <div class="col-3">
+                                    <img [src]=" IconeUsuario" alt="">
+                                </div>
+                                <div class="w-100"></div>
+                                <form (ngSubmit)="login()" #loginForm="ngForm">
+                                   <div class="row justify-content-center">
+                                        <div class="col-6 left InputLogin">
+                                            <label for="">Usuários:</label>
+                                            <input type="text" id="username" name="username" [(ngModel)]="username" required>
+                                        </div>
+                                        <div class="w-100"></div>
+                                        <div class="col-6 left InputLogin">
+                                            <label for="">Senha:</label>
+                                            <input type="password" id="password" name="password" [(ngModel)]="password" required>
+                                        </div>
+                                        <div class="w-100"></div>
+                                        <div class="row justify-content-center Margin25PX flex">
+                                            <div class="col-3">
+                                               
+                                                <button class="buttonLogin" type="submit" [disabled]="!loginForm.valid"> 
+                                                   <img [src]="iconeLogar" alt=""> Logar
+                                                </button>
+                                            </div>
+                                            <div class="col-3">
+                                                <button class="buttonLogin" (click)="resetForm()">
+                                                    <img [src]="iconeReset" alt="">
+                                                    Reset
+                                                </button>
+                                            </div>
+                                        </div>
+                                   </div>
+                                </form>
+                            </div> 
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+

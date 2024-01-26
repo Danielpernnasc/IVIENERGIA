@@ -1,0 +1,20 @@
+@import '../../../styles.scss';
+
+
+.date{
+    text-align: center;
+    padding: 15px;
+    span{
+        margin-top: 10px;
+        color: #DFFF02;
+        font-family: 'Bricolage Grotesque', sans-serif;
+        font-weight: 500;
+     
+    }
+}
+.imgLOGO{
+    margin-left: 15px;
+}
+.topHeader {
+    background: $fundoHeader;
+}

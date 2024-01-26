@@ -1,0 +1,85 @@
+
+.menuIVI {
+    background-color: #727272;
+    border: solid #212121 2px;
+    height: 70px;
+    padding: 0;
+    margin-top: 10px;
+    ul, li, a, span{
+        display: flex;
+        list-style: none;
+        padding-right: 10px;
+        margin-right: 10px;
+        background: 0;
+        color: #000;
+        margin-top: 5px;
+    }
+}
+.linkMenu{
+    background: 0;
+    border: 0;
+    margin-top: 10px;
+    background-color: 0;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-weight: 500;
+  
+}
+
+.buttonDropdown, .divDropdown{
+  
+    border: 0;
+    margin-top: 10px;
+    color: #000;
+    background: #727272;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-weight: 500;
+    margin-top: 5px;
+    
+}
+.divBuscador{
+    margin: 7px;
+    border-radius: 30px;
+    width: 230px;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    height: 40px;
+}
+.inputBuscador{
+    padding: 0 10px;
+    border: 0;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    height: 40px;
+    font-family: "Kumbh Sans", sans-serif;
+    width: 150px;
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-weight: 500;
+    span {
+        margin-top: 14px;
+        margin-left: 10px;
+    }
+   
+}
+.dropdown_content{
+    display: none;
+    position: absolute;
+    background-color: #727272;
+    color: #000;
+    background: #727272;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    min-width: 300px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    margin-top: 40px;
+}
+.dropdown:hover .dropdown_content{
+    display:block;
+}
+
+
+

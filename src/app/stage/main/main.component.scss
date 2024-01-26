@@ -1,0 +1,51 @@
+@import '../../../styles.scss';
+@import '../../../app/pages/pre-cadastro/pre-cadastro.component.scss';
+
+
+
+
+.backgroundLoging{
+    margin-top: 50px;
+    background-color: $corAmareloIvi;
+    padding: 20px;
+}
+.Margin50PX{
+    margin-top: 50px;
+}
+
+.Margin25PX{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.caixaLogin{
+    background-color: $fundoBranco;
+    border: solid; text-align: center;
+    margin: 10px;
+    border-radius: 10px;
+}
+.left{
+    text-align: $textLeft;
+}
+.InputLogin{
+        label {
+            margin-left: 8px;
+            font-family: 'Bricolage Grotesque', sans-serif;
+            font-weight: 600;
+            color:#4A4A4A;
+            font-size: 12px;
+        }
+        @extend.InputForm
+     
+    
+}
+.buttonLogin{
+    background-color: $fundoHeader;
+    color: #fff;
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-weight: 600;
+    border-radius: 5px;
+    width: 90px;
+}
+.flex{
+    display: flexbox
+}

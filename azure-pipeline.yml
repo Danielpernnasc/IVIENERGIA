@@ -1,0 +1,23 @@
+trigger:
+- main 
+
+resources:
+- repo: self
+
+jobs:
+- job: build_and_deploy_job
+  displayName: Build and Deploy Job
+  pool:
+    vmImage: ubuntu-latest
+    parallel: 1
+  variables:
+  - group: Azure-Static-Web-Apps-lemon-flower-0d3ea7210-variable-group
+  steps:
+  - checkout: self
+    submodules: true
+  - task: AzureStaticWebApp@0
+    inputs:
+      azure_static_web_apps_api_token: $(AZURE_STATIC_WEB_APPS_API_TOKEN_LEMON_FLOWER_0D3EA7210)
+      app_location: "/"
+      api_location: ""
+      output_location: "dist/ivi-energia-web-app"
